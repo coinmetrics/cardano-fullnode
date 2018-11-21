@@ -5,7 +5,7 @@ RUN nix-env -i git
 
 ARG VERSION
 
-RUN git clone --depth 1 -b release/${VERSION} https://github.com/input-output-hk/cardano-sl.git /root/cardano-sl
+RUN git clone --depth 1 -b ${VERSION} https://github.com/input-output-hk/cardano-sl.git /root/cardano-sl
 
 COPY nix.conf /etc/nix/nix.conf
 
