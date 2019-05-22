@@ -9,12 +9,12 @@ It is being used internally at Coin Metrics, and is published in the hope it wil
 [![Docker Repository on Quay](https://quay.io/repository/coinmetrics/fullnode-cardano/status "Docker Repository on Quay")](https://quay.io/repository/coinmetrics/fullnode-cardano)
 
 ```
-docker pull quay.io/coinmetrics/fullnode-cardano:<version>
+docker pull quay.io/coinmetrics/fullnode-cardano:<version>_fork
 ```
 
 ## Security
 
-This image builds binaries from sources downloaded from https://github.com/input-output-hk/cardano-sl, with use of IOHK's binary cache https://hydra.iohk.io/.
+This image builds binaries from sources forked by Coin Metrics, downloaded from https://gitlab.com/coinmetrics/fullnodes/forks/cardano-sl, with use of IOHK's binary cache https://hydra.iohk.io/.
 
 Image is built on shared Gitlab CI runners provided by Gitlab.com. [CI logs](https://gitlab.com/coinmetrics/fullnodes/cardano/pipelines)
 
